@@ -14,3 +14,4 @@ jobs:
           npm -v
           git -v
           curl -v
+          whoiam
