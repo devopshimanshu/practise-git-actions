@@ -13,5 +13,4 @@ jobs:
           node -v
           npm -v
           git --version
-          curl -v
           whoiam
