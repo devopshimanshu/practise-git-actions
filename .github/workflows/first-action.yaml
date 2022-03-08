@@ -13,5 +13,5 @@ jobs:
       - name: List content after checkout
         run: |
           pwd
-          ls
+          ls -a
 
