@@ -9,7 +9,7 @@ jobs:
           pwd
           ls
       - name: Checking out repo
-        uses: action/checkout@v3.0.0
+        uses: actions/checkout@v3.0.0
       - name: List content after checkout
         run: |
           pwd
