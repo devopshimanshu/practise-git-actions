@@ -5,13 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List content before checkout
-        runs: |
+        run: |
           pwd
           ls
       - name: Checking out repo
         uses: action/checkout@v3.0.0
       - name: List content after checkout
-        runs: |
+        run: |
           pwd
           ls
 
