@@ -2,8 +2,8 @@ name: Checking checkout action
 on: [push]
 jobs:
   checkout-action-demo:
-    steps:
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
+      steps:
         - name: List content before checkout
           runs: |
             pwd
