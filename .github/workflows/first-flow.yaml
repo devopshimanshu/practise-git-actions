@@ -14,3 +14,11 @@ jobs:
           npm -v
           git --version
           pwd
+  run-windows-command:
+    run-on: windows-latest
+    steps:
+      - name: Directory Powershell
+        run: Get-Location
+      - name: Directory by Bash
+        run: pwd
+        shell: bash
