@@ -1,0 +1,13 @@
+name: Github Actions Demo
+on: [push]
+jobs:
+  run-github-action:
+    runs-on: ubutnu-latest
+    steps:
+      - name: Greet Action
+        id: greet
+        uses: /actions/hello-world-docker-action@v1
+        with:
+          who-to-greet: 'Mona the Octocat'
+      - name: Check output of previous action
+        run: echo "${{steps.greet.outputs.time}}"
