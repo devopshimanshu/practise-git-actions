@@ -1,13 +1,17 @@
-name: Github Actions Demo
+name: Checking checkout action 
 on: [push]
 jobs:
-  run-github-action:
-    runs-on: ubutnu-latest
+  checkout-action-demo:
+    runs-on: ubuntu-latest
     steps:
-      - name: Greet Action
-        id: greet
-        uses: /actions/hello-world-javascript-action@v1
-        with:
-          who-to-greet: 'Mona the Octocat'
-      - name: Check output of previous action
-        run: echo "${{steps.greet.outputs.time}}"
+      - name: List content before checkout
+        runs: |
+          pwd
+          ls
+      - name: Checking out repo
+        uses: action/checkout@v3.0.0
+      - name: List content after checkout
+        runs: |
+          pwd
+          ls
+
