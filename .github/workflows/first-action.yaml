@@ -14,4 +14,8 @@ jobs:
         run: |
           pwd
           ls -a
-
+  second-job:
+    run-on: ubuntu-latest
+    steps:
+      - name: Just a linux command
+        run: ls -lrtha
