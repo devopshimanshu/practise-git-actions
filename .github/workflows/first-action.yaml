@@ -1,5 +1,5 @@
 name: Checking checkout action 
-on: [push]
+on: [push, rull_request]
 jobs:
   checkout-action-demo:
     runs-on: ubuntu-latest
